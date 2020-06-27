@@ -1,0 +1,23 @@
+{
+  "params":
+  {
+    "local_uri": "mysql://root:@localhost/Cs_Club",
+    "prod_uri": "mysql://root:@localhost/Cs_Club",
+    "index_img":"index.jpg",
+    "about_img":"about.jpg",
+    "contact_img": "contact-bg.jpg",
+    "act_1": "workshop_1.jpg",
+    "act_2": "workshop_2.jpg"
+
+
+  }
+
+
+
+
+
+
+
+
+
+}

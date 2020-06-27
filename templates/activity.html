@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cs-Club Official</title>
+
+  <!-- Bootstrap core CSS -->
+<link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="{{url_for('static',filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+  <!-- Custom styles for this template -->
+  <link href="{{url_for('static',filename='css/clean-blog.min.css')}}" rel="stylesheet">
+
+
+</head>
+
+ <body>
+
+  <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-white" href="/">Cs_Club</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="/">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="/activity">Activity</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/team">team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+
+  <!-- Page Header -->
+
+    <div class="container">
+
+        <div class="row pt-5 mt-5">
+          <div class="col-lg-6 order-lg-2">
+            {% set fname='img/'+params['act_1'] %}
+            <img src="{{url_for('static',filename=fname)}}" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-lg-6 pt-3 pt-lg-3 "  >
+            <h3>Conducted Python For Data Science Workshop</h3>
+            <p class="font-italic">
+              CSE Club  has conducted a workshop on "Python for Data Sciences" on 12th March,2020. Mr.Nirmal Saravanan,
+              SOFTWARE DEVELOPER from  HEXAWARE  has trained the students on the theme of the workshop.
+
+            </p>
+          </div>
+        </div>
+    </div>
+      <hr class="m-5">
+
+      <div class="container ">
+        <div class="row pt-3 mt-1">
+          <div class="col-lg-6 order-lg-0">
+            {% set fname='img/'+params['act_2'] %}
+            <img src="{{url_for('static',filename=fname)}}" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-lg-6 pt-3 pt-lg-3 "  >
+            <h3>Conducted Ethical Hacking Workshop</h3>
+            <p class="font-italic">
+              Computer Science Club has conducted "Ethical Hacking Workshop" for Second and Third year students of CSE
+              on 7th February, 2019 in Digital Library. Mr.Raja Perumal, CEO of Integrated Resource Management Solutions (IRMS),
+              Chennai and his team of resource persons trained the students.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+     <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/csclub_sist/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/cs-club-sist/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; CsClub(SIST) 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+  <!-- Custom scripts for this template -->
+  <script src="{{url_for('static',filename='js/clean-blog.min.js')}}"></script>
+
+</body>
+
+</html>
+
